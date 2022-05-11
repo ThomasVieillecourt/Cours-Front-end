@@ -1,0 +1,9 @@
+section {
+    height: 200px;
+    @include center; // @include pour appeler le mixin //
+
+    p {
+        text-align: center;
+        width: 400px;
+    }
+}

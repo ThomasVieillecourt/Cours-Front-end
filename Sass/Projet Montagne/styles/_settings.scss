@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "InterBold";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "MerriweatherLight";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flux {
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@mixin centerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+$color1: white;
+$color2: black;
+$font1: "InterBold";
+$font2: "MerriweatherLight"

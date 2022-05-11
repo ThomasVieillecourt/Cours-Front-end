@@ -1,0 +1,39 @@
+.jump__container {
+    background-color: $color1;
+    @include centerColumn;
+
+    .jump__container-head {
+        font-size: 1rem;
+        font-family: $font2;
+        padding: 56px 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 400px;
+            height: 1px;
+            background: rgb(196, 196, 196);
+            left: 70px;
+            position: absolute;
+            transform: translateY(8px);
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 400px;
+            height: 1px;
+            background: rgb(196, 196, 196);
+            right: 70px;
+            position: absolute;
+            transform: translateY(-12px);
+        }
+    }
+
+
+
+
+    .jump__container-img {
+        width: 80%;
+    }
+}

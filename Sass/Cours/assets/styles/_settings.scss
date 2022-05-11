@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+$color1: pink;
+$color2: black;
+$color3: rgb(182, 84, 101);
+$font1: "Montserrat", sans-serif;
+
+/// Mixin = varibale avec plusieurs lignes ///
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

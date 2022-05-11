@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "InterBold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "MerriweatherLight";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flux {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background: url("../img/bg.jpg") fixed center/cover;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "InterBold";
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-size: 4rem;
+  padding: 0;
+}
+
+header .header__content-text {
+  font-family: "MerriweatherLight";
+  color: white;
+  padding: 56px 0;
+}
+
+header .dropdown-btn {
+  color: white;
+  border: 2px solid white;
+  padding: 10px 13px;
+  border-radius: 50%;
+}
+
+header .dropdown-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+header nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+header li {
+  list-style: none;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a li:hover {
+  color: black;
+  background-color: #ebebebc9;
+}
+
+header .nav__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+  font-family: "InterBold";
+  letter-spacing: 1.4px;
+  font-size: 0.8rem;
+}
+
+header .nav__left li {
+  padding: 24px 24px;
+}
+
+header .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+header .nav__right li {
+  padding: 24px 24px;
+}
+
+.jump__container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jump__container .jump__container-head {
+  font-size: 1rem;
+  font-family: "MerriweatherLight";
+  padding: 56px 0;
+}
+
+.jump__container .jump__container-head::before {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 1px;
+  background: #c4c4c4;
+  left: 70px;
+  position: absolute;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.jump__container .jump__container-head::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 1px;
+  background: #c4c4c4;
+  right: 70px;
+  position: absolute;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.jump__container .jump__container-img {
+  width: 80%;
+}
+/*# sourceMappingURL=style.css.map */

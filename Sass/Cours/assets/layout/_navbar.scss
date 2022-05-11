@@ -1,0 +1,19 @@
+nav {
+    background-color: $color1;
+
+    ul {
+        list-style: none;
+        font-weight: 600;
+        font-family: $font1;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        padding: 24px 0;
+
+        &:hover {
+            color: $color3;
+        }
+    }
+}
