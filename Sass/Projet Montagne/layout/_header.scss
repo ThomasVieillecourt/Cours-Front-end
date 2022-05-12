@@ -17,12 +17,25 @@ header {
         text-align: center;
         font-size: 5rem;
         padding: 0;
+
+        @media screen and (max-width: 800px) {
+            font-size: 3rem;
+
+        }
     }
 
     .header__content-text {
         font-family: $font2;
         color: $color1;
         padding: 56px 0;
+        font-size: 1rem;
+        text-align: center;
+
+        @media screen and (max-width: 800px) {
+            font-size: 0.8rem;
+            text-align: center;
+
+        }
     }
 
     .dropdown-btn {
@@ -84,5 +97,39 @@ header {
             padding: 24px 24px;
         }
     }
+
+    @media screen and (max-width: 710px) {
+        .nav__right {
+            display: none;
+        }
+
+        .nav__left li {
+            text-align: center;
+        }
+
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .header__content-text {
+            padding: 56px 24px;
+            font-size: 0.8rem;
+        }
+
+        .nav__left li {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .nav__left {
+
+            & li {
+                padding: 24px 4px;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
 
 }

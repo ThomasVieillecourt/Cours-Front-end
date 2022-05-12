@@ -3,6 +3,10 @@
     border-top: 2px solid rgb(236, 236, 236);
     @include centerRow;
 
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -13,10 +17,19 @@
 
     &:first-child {
         border-right: 1px solid rgb(236, 236, 236);
+
+        @media screen and (max-width: 600px) {
+            border: none;
+        }
     }
 
     &:last-child {
         border-left: 1px solid rgb(236, 236, 236);
+
+        @media screen and (max-width: 600px) {
+            border: none;
+        }
+
     }
 
     img {
