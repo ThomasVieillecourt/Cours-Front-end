@@ -1,0 +1,44 @@
+.article__container {
+    background-color: $color1;
+    border-top: 2px solid rgb(236, 236, 236);
+    @include centerRow;
+
+}
+
+
+
+.article__container-content {
+    @include centerColumn;
+    padding: 48px 56px;
+
+    &:first-child {
+        border-right: 1px solid rgb(236, 236, 236);
+    }
+
+    &:last-child {
+        border-left: 1px solid rgb(236, 236, 236);
+    }
+
+    img {
+        width: 100%;
+        padding: 36px 0;
+    }
+
+    p {
+        font-family: $font2;
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        color: $color2;
+        text-transform: uppercase;
+        font-family: $font1;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 0;
+        padding-top: 24px;
+    }
+
+}

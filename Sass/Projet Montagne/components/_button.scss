@@ -1,0 +1,15 @@
+.site__btn {
+    margin: 24px auto;
+    padding: 12px 32px;
+    background-color: $color1;
+    text-transform: uppercase;
+    font-family: $font1;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color2;
+        color: $color1;
+    }
+}

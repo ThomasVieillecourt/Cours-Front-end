@@ -18,7 +18,7 @@
 
     <header class="flux">
         <div class="header__content">
-            <h1>La montagne sa vous gagne</h1>
+            <h1>La montagne <br>ça vous gagne</h1>
             <p class="header__content-text"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
                     laboriosam
                     distinctio quae enim minus
@@ -63,87 +63,109 @@
     <main>
         <section class="jump__container flux">
             <p class="jump__container-head">April 11, 2022</p>
-            <h2>and this is a massive headline</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora soluta doloremque dolores porro
-                odio, esse debitis quos aspernatur quibusdam.</p>
+            <div class="jump__container-text">
+                <h2>and this is a massive headline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora soluta doloremque dolores
+                    porro
+                    odio, esse debitis quos aspernatur quibusdam.</p>
+            </div>
             <img src="img/pic01.jpg" alt="homme qui saute sur une montagne" class="jump__container-img">
-            <button>full story</button>
+            <button class="site__btn">full story</button>
         </section>
 
 
-        <section>
-            <div>
+        <section class="article__container flux">
+            <div class="article__container-content">
                 <p>April 10, 2022</p>
-                <h3>Lorem ipsum dolor sit.</h3>
+                <h3>Lorem ipsum <br>dolor amet consectetur</h3>
                 <img src="img/pic02.jpg" alt="paysage de foret avec horizon">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam iure earum tempore ipsum
                     in?</p>
-                <button>full story</button>
+                <button class="site__btn">full story</button>
             </div>
 
-            <div>
+            <div class="article__container-content">
                 <p>April 10, 2022</p>
-                <h3>Lorem ipsum dolor sit.</h3>
+                <h3>Lorem ipsum <br>dolor amet consectetur</h3>
                 <img src="img/pic03.jpg" alt="paysage montagne au bord d'une falaise">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam iure earum tempore ipsum
                     in?</p>
-                <button>full story</button>
+                <button class="site__btn">full story</button>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <form action="">
+    <footer class="footer__container flux">
+        <div class="footer__container-left">
+            <form action="#" class="form__container">
                 <label for="name">NAME</label>
                 <input type="text" id="name">
                 <label for="mail">EMAIL</label>
-                <input type="mail" id="name">
+                <input type="mail" id="mail">
                 <label for="text-area">MESSAGE</label>
                 <textarea id="text-area"></textarea>
-                <button>SEND MESSAGE</button>
+                <button class="btn__footer">SEND MESSAGE</button>
             </form>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <p><strong>Address</strong></p>
-                </div>
+        <div class="footer__container-right">
+            <div class="footer__right-minicontainer">
+
+                <p class="minicontainer__title">Address</p>
+
                 <div>
                     <p>1234 Somewhere Road #87257</p>
                     <p>Nashville, TN 0000-0000</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p><strong>Phone</strong></p>
-                </div>
-                <div>
-                    <p>(000) 000-0000</p>
-                </div>
+            <div class="footer__right-minicontainer">
+
+                <p class="minicontainer__title">Phone</p>
+
+
+                <p>(000) 000-0000</p>
+
             </div>
-            <div>
-                <div>
-                    <p><strong>Email</strong></p>
-                </div>
-                <div>
-                    <p>info@untitled.fr</p>
-                </div>
+            <div class="footer__right-minicontainer">
+
+                <p class="minicontainer__title">Email</p>
+
+
+                <p>info@untitled.fr</p>
+
             </div>
-            <div>
+            <div class="footer__right-minicontainer">
+
+                <p class="minicontainer__title">Social</p>
+
                 <div>
-                    <p><strong>Social</strong></p>
+                    <ul class="list__footer">
+                        <a href="#">
+                            <div class="rond">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="rond">
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rond">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="rond">
+                                <li><i class="fa-brands fa-github"></i></li>
+                            </div>
+                        </a>
                 </div>
-                <div>
-                    <ul>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-github"></i></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
+        </div>
         </div>
     </footer>
 

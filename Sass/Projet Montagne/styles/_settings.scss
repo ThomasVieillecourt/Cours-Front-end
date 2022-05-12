@@ -29,6 +29,12 @@
     align-items: center;
 }
 
+@mixin centerColumnForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @mixin centerRow {
     display: flex;
     justify-content: space-between;
