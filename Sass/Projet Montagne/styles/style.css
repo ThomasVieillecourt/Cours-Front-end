@@ -180,9 +180,9 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -294,23 +294,37 @@ header .nav__right li {
   width: 300px;
   height: 1px;
   background: #c4c4c4;
-  left: 300px;
+  left: 20%;
   position: absolute;
   -webkit-transform: translateY(8px);
           transform: translateY(8px);
 }
 
+@media screen and (max-width: 1200px) {
+  .jump__container .jump__container-head::before {
+    width: 200px;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jump__container .jump__container-head::before {
+    width: 200px;
+    left: 10%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .jump__container .jump__container-head::before {
     width: 200px;
-    left: 40px;
+    left: 10%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .jump__container .jump__container-head::before {
     width: 100px;
-    left: 30px;
+    left: 10%;
   }
 }
 
@@ -327,23 +341,37 @@ header .nav__right li {
   width: 300px;
   height: 1px;
   background: #c4c4c4;
-  right: 300px;
+  right: 20%;
   position: absolute;
   -webkit-transform: translateY(-12px);
           transform: translateY(-12px);
 }
 
+@media screen and (max-width: 1200px) {
+  .jump__container .jump__container-head::after {
+    width: 200px;
+    right: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jump__container .jump__container-head::after {
+    width: 200px;
+    right: 10%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .jump__container .jump__container-head::after {
     width: 200px;
-    right: 40px;
+    right: 10%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .jump__container .jump__container-head::after {
     width: 100px;
-    right: 30px;
+    right: 10%;
   }
 }
 
@@ -412,9 +440,9 @@ header .nav__right li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
