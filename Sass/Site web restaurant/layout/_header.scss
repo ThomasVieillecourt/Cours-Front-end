@@ -1,0 +1,139 @@
+header {
+
+    height: 100vh;
+    width: 100%;
+    background: url('../img/bg-slider-06.jpg') center/cover;
+    // animation: slideBG 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @keyframes slideBG {
+        0% {
+            background: url("../img/bg-slider-01.jpg") center/cover;
+        }
+
+        15% {
+            background: url("../img/bg-slider-05.jpg") center/cover;
+        }
+
+        30% {
+            background: url("../img/bg-slider-06.jpg") center/cover;
+        }
+
+        45% {
+            background: url("../img/bg-slider-01.jpg") center/cover;
+        }
+
+        60% {
+            background: url("../img/bg-slider-05.jpg") center/cover;
+        }
+
+        75% {
+            background: url("../img/bg-slider-06.jpg") center/cover;
+        }
+
+    }
+
+
+    nav {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        position: absolute;
+        top: 0;
+
+
+        p {
+            font-family: $font1;
+            color: $color1;
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+
+        .nav__site {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4vw;
+            text-transform: uppercase;
+            font-family: $font2;
+            font-size: 0.8rem;
+
+            li {
+                color: $color1;
+            }
+        }
+
+        .nav__social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+
+
+            li {
+                color: $color1;
+            }
+        }
+    }
+
+
+    .header__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-family: $font2;
+            color: $color1;
+            text-align: center;
+            font-size: 4rem;
+            line-height: 3.4rem;
+            letter-spacing: 0.8rem;
+            padding: 24px 0;
+
+            span {
+                font-family: $font1;
+                color: $color4;
+                font-weight: lighter;
+                letter-spacing: normal;
+            }
+        }
+
+        p {
+            font-family: $font3;
+            color: $color1;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-weight: lighter;
+            padding: 24px 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
