@@ -200,4 +200,467 @@ header .header__content p {
   font-weight: lighter;
   padding: 24px 0;
 }
+
+.store__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 55vh;
+}
+
+.store__container .store__container-left,
+.store__container .store__container-right {
+  width: 50%;
+  height: 100%;
+}
+
+.store__container .store__container-right {
+  background: url("../img/store-01.jpg") center/cover;
+}
+
+.store__container .store__container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px;
+}
+
+.store__container .store__container-left .store__left__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px dashed #AC7647;
+  height: 100%;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.store__container .store__container-left .store__left__content h2 {
+  font-family: "Poppins";
+  color: #21201E;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.store__container .store__container-left .store__left__content h2 span {
+  font-family: "Allura";
+  color: #AC7647;
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-size: 2rem;
+}
+
+.store__container .store__container-left .store__left__content .logo__small {
+  padding: 24px 0;
+}
+
+.store__container .store__container-left .store__left__content .store__text {
+  font-family: "Roboto";
+  color: #21201E;
+  font-size: 0.9rem;
+}
+
+.store__container .store__container-left .store__left__content .photo__chef1 {
+  border-radius: 50%;
+  width: 80px;
+  padding: 16px 0;
+}
+
+.store__container .store__container-left .store__left__content .title__img {
+  font-family: "Poppins";
+  color: #21201E;
+  font-size: 1rem;
+}
+
+.store__container .store__container-left .store__left__content .subtitle__img {
+  font-family: "Roboto";
+  color: #21201E;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+.section__menu__container {
+  height: 100%;
+  width: 100%;
+}
+
+.section__menu__container .background-bot {
+  width: 100%;
+  height: 110vh;
+  background: url("../img/bg-menu-01.jpg") bottom/contain no-repeat;
+  background-color: #21201E;
+}
+
+.section__menu__container .container__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+}
+
+.section__menu__container .container__menu .container__menu__head {
+  width: 100%;
+  text-align: center;
+}
+
+.section__menu__container .container__menu .container__menu__head h2 {
+  font-family: "Allura";
+  color: #AC7647;
+  letter-spacing: normal;
+  font-size: 2rem;
+}
+
+.section__menu__container .container__menu .container__menu__head .logo__small {
+  padding: 24px 0;
+}
+
+.section__menu__container .container__menu .container__menu__head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 24px;
+}
+
+.section__menu__container .container__menu .container__menu__head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.section__menu__container .container__menu .container__menu__head nav ul li {
+  font-family: "Poppins";
+  font-weight: lighter;
+  color: #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.section__menu__container .container__menu .menu__grid {
+  width: 65%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: (25%)[4];
+      grid-template-rows: repeat(4, 25%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeeeee;
+  border-top: 2px solid #AC7647;
+}
+
+.section__menu__container .container__menu .menu__grid .menu__solo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 16px 8px;
+  border-bottom: 1px dashed #b9b9b9;
+  margin: 16px;
+}
+
+.section__menu__container .container__menu .menu__grid .menu__solo img {
+  border-radius: 50%;
+}
+
+.section__menu__container .container__menu .menu__grid .menu__solo .title__menu {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+
+.section__menu__container .container__menu .menu__grid .menu__solo .ingredient__menu {
+  font-family: "Roboto";
+  padding: 8px 0;
+}
+
+.section__menu__container .container__menu .menu__grid .menu__solo .price {
+  color: #AC7647;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.section__reservation {
+  width: 100%;
+  height: 80vh;
+  background-color: #21201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__reservation .section__reservation__container {
+  background-color: #eeeeee;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left {
+  text-align: center;
+  background-color: #000000;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content {
+  margin: 24px;
+  border: 1px dashed #AC7647;
+  background-color: #000000;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content h4 {
+  font-family: "Poppins";
+  color: #eeeeee;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 16px;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content h4 span {
+  font-family: "Allura";
+  color: #AC7647;
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-size: 2rem;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content img {
+  padding-bottom: 16px;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content .days {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: #AC7647;
+  padding: 16px 0;
+  font-size: 1.1rem;
+}
+
+.section__reservation .section__reservation__container .reservation__container__left-content .hours {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: #eeeeee;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right {
+  text-align: center;
+  margin: 0 72px;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right h4 {
+  font-family: "Poppins";
+  color: #000000;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right h4 span {
+  font-family: "Allura";
+  color: #AC7647;
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-size: 3rem;
+  line-height: 1.4rem;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right img {
+  padding: 32px 0;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form .form_line1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form .form_line2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form input {
+  border: none;
+  background-color: #eeeeee;
+  padding: 12px 0;
+  border-bottom: 1px solid #161513;
+  font-family: "Roboto";
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form input:focus {
+  outline: none;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form select {
+  border: none;
+  background-color: #eeeeee;
+  padding: 12px 0;
+  border-bottom: 1px solid #161513;
+  font-family: "Roboto";
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form select:focus {
+  outline: none;
+}
+
+.section__reservation .section__reservation__container .reservation__container__right form button {
+  color: #eeeeee;
+  background-color: #000000;
+  border-radius: 25px;
+  height: 50px;
+  width: 170px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.event__section {
+  background-color: #21201E;
+  height: 60vh;
+}
+
+.event__section .event__header {
+  text-align: center;
+}
+
+.event__section .event__header h3 {
+  font-family: "Poppins";
+  color: #eeeeee;
+  font-size: 2rem;
+}
+
+.event__section .event__header h3 span {
+  font-family: "Allura";
+  color: #AC7647;
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-size: 2.4rem;
+}
+
+.event__section .event__header .logo__small {
+  padding: 24px 0;
+}
+
+.event__section .grid__event {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 50% 30%;
+      grid-template-columns: 50% 30%;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: 'night celebrities' 'dj celebrities';
+}
+
+.event__section .event01 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: night;
+  background-color: aquamarine;
+}
+
+.event__section .event02 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dj;
+  background-color: chocolate;
+}
+
+.event__section .event03 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: celebrities;
+  background-color: crimson;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
