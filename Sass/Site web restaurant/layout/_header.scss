@@ -81,6 +81,16 @@ header {
                 color: $color1;
             }
         }
+
+        @media screen and (max-width:750px) {
+            .nav__site {
+                display: none;
+            }
+
+            .nav__social {
+                gap: 4vw;
+            }
+        }
     }
 
 
@@ -115,6 +125,22 @@ header {
             letter-spacing: 0.5rem;
             font-weight: lighter;
             padding: 24px 0;
+        }
+
+        @media screen and (max-width:750px) {
+            h1 {
+
+                font-size: 2.5rem;
+                line-height: 3.4rem;
+                letter-spacing: 0.8rem;
+                padding: 12px 0;
+            }
+
+
+            p {
+                font-size: 0.8rem;
+                text-align: center;
+            }
         }
     }
 

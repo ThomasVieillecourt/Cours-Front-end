@@ -158,6 +158,15 @@ header nav .nav__social li {
   color: #eeeeee;
 }
 
+@media screen and (max-width: 750px) {
+  header nav .nav__site {
+    display: none;
+  }
+  header nav .nav__social {
+    gap: 4vw;
+  }
+}
+
 header .header__content {
   height: 100%;
   display: -webkit-box;
@@ -199,6 +208,19 @@ header .header__content p {
   letter-spacing: 0.5rem;
   font-weight: lighter;
   padding: 24px 0;
+}
+
+@media screen and (max-width: 750px) {
+  header .header__content h1 {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.8rem;
+    padding: 12px 0;
+  }
+  header .header__content p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
 .store__container {
@@ -303,6 +325,15 @@ header .header__content p {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 750px) {
+  .store__container .store__container-right {
+    display: none;
+  }
+  .store__container .store__container-left {
+    width: 100%;
+  }
+}
+
 .section__menu__container {
   height: 100%;
   width: 100%;
@@ -311,8 +342,14 @@ header .header__content p {
 .section__menu__container .background-bot {
   width: 100%;
   height: 110vh;
-  background: url("../img/bg-menu-01.jpg") bottom/contain no-repeat;
+  background: url("../img/bg-menu-01.jpg") bottom/150% no-repeat;
   background-color: #21201E;
+}
+
+@media screen and (max-width: 900px) {
+  .section__menu__container .background-bot {
+    height: 100%;
+  }
 }
 
 .section__menu__container .container__menu {
@@ -435,6 +472,44 @@ header .header__content p {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 900px) {
+  .section__menu__container .container__menu .menu__grid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (12%)[8];
+        grid-template-rows: repeat(8, 12%);
+    width: 50%;
+  }
+  .section__menu__container .container__menu .menu__grid .menu__solo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 60% 10%;
+        grid-template-columns: 30% 60% 10%;
+    gap: 0px;
+    margin: 0;
+  }
+  .section__menu__container .container__menu .menu__grid .menu__solo img {
+    border-radius: 50%;
+    width: 80%;
+  }
+  .section__menu__container .container__menu .menu__grid .menu__solo .title__menu {
+    font-size: 0.9rem;
+  }
+  .section__menu__container .container__menu .menu__grid .menu__solo .ingredient__menu {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+  .section__menu__container .container__menu .menu__grid .menu__solo .price {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section__menu__container .container__menu .menu__grid {
+    width: 80%;
+  }
+}
+
 .section__reservation {
   width: 100%;
   height: 80vh;
@@ -474,6 +549,7 @@ header .header__content p {
   margin: 24px;
   border: 1px dashed #AC7647;
   background-color: #000000;
+  padding: 16px;
 }
 
 .section__reservation .section__reservation__container .reservation__container__left-content h4 {
@@ -490,10 +566,6 @@ header .header__content p {
   font-weight: lighter;
   letter-spacing: normal;
   font-size: 2rem;
-}
-
-.section__reservation .section__reservation__container .reservation__container__left-content img {
-  padding-bottom: 16px;
 }
 
 .section__reservation .section__reservation__container .reservation__container__left-content .days {
@@ -547,6 +619,21 @@ header .header__content p {
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 500px) {
+  .section__reservation .section__reservation__container .reservation__container__right form .form_line1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .section__reservation .section__reservation__container .reservation__container__right form .form_line2 {
   display: -ms-grid;
   display: grid;
@@ -557,6 +644,21 @@ header .header__content p {
           justify-content: center;
   gap: 16px;
   padding: 16px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .section__reservation .section__reservation__container .reservation__container__right form .form_line2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .section__reservation .section__reservation__container .reservation__container__right form input {
@@ -597,9 +699,70 @@ header .header__content p {
   cursor: pointer;
 }
 
+.section__reservation .section__reservation__container .reservation__container__right form button:hover {
+  background-color: #161513;
+}
+
+@media screen and (max-width: 500px) {
+  .section__reservation .section__reservation__container .reservation__container__right {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section__reservation .section__reservation__container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+    width: 100%;
+  }
+  .section__reservation .section__reservation__container h4 {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section__reservation .section__reservation__container form .form_line1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  .section__reservation .section__reservation__container form .form_line2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section__reservation {
+    height: 100%;
+    padding: 80px 0;
+  }
+}
+
 .event__section {
   background-color: #21201E;
-  height: 60vh;
+  height: 100vh;
 }
 
 .event__section .event__header {
@@ -662,5 +825,425 @@ header .header__content p {
   background-color: crimson;
   width: 100%;
   height: 100%;
+}
+
+.event__section .event__left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__left .event__left-img {
+  background: url("../img/event-01.jpg") center/cover;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__left .event__left-img .event__container-text {
+  width: 72px;
+  height: 72px;
+  background-color: #21201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__left .event__left-img p {
+  font-family: "Roboto";
+  color: #eeeeee;
+  text-align: center;
+}
+
+.event__section .event__left .event__left-img p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.event__section .event__left .event__left-img02 {
+  background: url("../img/event-02.jpg") center/cover;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__left .event__left-img02 .event__container-text {
+  width: 72px;
+  height: 72px;
+  background-color: #21201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__left .event__left-img02 p {
+  font-family: "Roboto";
+  color: #eeeeee;
+  text-align: center;
+}
+
+.event__section .event__left .event__left-img02 p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.event__section .event__left .event__left-right {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+  padding: 56px 24px;
+}
+
+.event__section .event__left .event__left-right .event__title {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 16px;
+}
+
+.event__section .event__left .event__left-right .event__location {
+  font-family: "Roboto";
+  color: #b6b6b6;
+  padding-bottom: 16px;
+}
+
+.event__section .event__left .event__left-right .event__link {
+  padding: 16px 0;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.event__section .event__right {
+  height: 100%;
+  background: url("../img/event-03.jpg") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px;
+}
+
+.event__section .event__right .event__right-content {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.event__section .event__right .event__right-content .event__right-text-container {
+  position: absolute;
+  top: 0;
+  width: 72px;
+  height: 72px;
+  background-color: #21201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event__section .event__right .event__right-content .event__right-text-container p {
+  font-family: "Roboto";
+  color: #eeeeee;
+  text-align: center;
+}
+
+.event__section .event__right .event__right-content .event__right-text-container p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.event__section .event__right .event__right-content .event__title {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.event__section .event__right .event__right-content .event__location {
+  font-family: "Roboto";
+  color: #b6b6b6;
+  padding-bottom: 48px;
+}
+
+.event__section .event__right .event__right-content .event__link {
+  padding-top: 36px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .event__section {
+    display: none;
+  }
+}
+
+.quote__container {
+  width: 100%;
+  height: 40vh;
+  background: url("../img/gmap.jpg") center/cover;
+  position: relative;
+}
+
+.quote__container .quote__content {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 10%;
+  top: -20%;
+}
+
+.quote__container .quote__content img {
+  width: 56px;
+  border-radius: 50%;
+  position: absolute;
+  top: -24px;
+}
+
+.quote__container .quote__content .quote__maintext {
+  padding: 0 80px;
+  padding-top: 56px;
+  padding-bottom: 24px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .quote__container .quote__content .quote__maintext {
+    padding: 0 40px;
+    padding-top: 48px;
+    padding-bottom: 25px;
+  }
+}
+
+.quote__container .quote__content .quote__maintext i {
+  padding: 8px;
+}
+
+.quote__container .quote__content .autor {
+  font-family: "Roboto";
+  padding: 16px 0;
+}
+
+.quote__container .quote__content .poste {
+  font-family: "Roboto";
+  color: #AC7647;
+  font-size: 0.8rem;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 750px) {
+  .quote__container .quote__content {
+    top: -10%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .quote__container {
+    height: 100%;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__left {
+  background-color: #161513;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 56px 10%;
+}
+
+footer .footer__left h4 {
+  font-family: "Allura";
+  color: #AC7647;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+footer .footer__left p {
+  color: #eeeeee;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+footer .footer__right {
+  background-color: #21201E;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 56px 10%;
+}
+
+footer .footer__right p {
+  text-transform: uppercase;
+  color: #eeeeee;
+  font-family: "Poppins";
+  padding: 16px 0;
+}
+
+footer .footer__right input {
+  background-color: #21201E;
+  padding: 8px;
+  width: 12vw;
+  border: 1px solid #161513;
+}
+
+footer .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+footer .social__list li {
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  footer .footer__left {
+    display: none;
+  }
+  footer .footer__right {
+    width: 100%;
+  }
+  footer .footer__right input {
+    width: 50vw;
+  }
+  footer .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
+  footer .social__list li {
+    color: #eeeeee;
+  }
 }
 /*# sourceMappingURL=style.css.map */

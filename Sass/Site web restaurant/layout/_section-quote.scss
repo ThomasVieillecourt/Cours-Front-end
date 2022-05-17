@@ -1,0 +1,67 @@
+.quote__container {
+    width: 100%;
+    height: 40vh;
+    background: url('../img/gmap.jpg') center/cover;
+    position: relative;
+
+
+    .quote__content {
+        background-color: $color1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 10%;
+        top: -20%;
+
+        img {
+            width: 56px;
+            border-radius: 50%;
+            position: absolute;
+            top: -24px;
+        }
+
+        .quote__maintext {
+            padding: 0 80px;
+            padding-top: 56px;
+            padding-bottom: 24px;
+            text-align: center;
+            font-family: $font3;
+            font-size: 0.9rem;
+            line-height: 2rem;
+
+            @media screen and (max-width:750px) {
+                padding: 0 40px;
+                padding-top: 48px;
+                padding-bottom: 25px;
+            }
+
+            i {
+                padding: 8px;
+            }
+        }
+
+        .autor {
+            font-family: $font3;
+            padding: 16px 0;
+        }
+
+        .poste {
+            font-family: $font3;
+            color: $color4;
+            font-size: 0.8rem;
+            padding-bottom: 24px;
+        }
+
+        @media screen and (max-width:750px) {
+            top: -10%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        height: 100%;
+
+    }
+}
