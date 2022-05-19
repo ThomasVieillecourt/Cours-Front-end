@@ -19,6 +19,15 @@ body {
     background-color: #1C1C1C;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    background-color: #474DFF;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    top: 0;
 }
 
 
@@ -49,10 +58,12 @@ body {
 
 .hero__container {
     display: flex;
+    height: 100vh;
     gap: 24px;
     padding: 24px;
     align-items: center;
     justify-content: center;
+    margin-top: 24px;
 }
 
 .hero__container__left,

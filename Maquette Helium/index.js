@@ -16,6 +16,7 @@
 // })
 
 
+// Modification du curseur //
 
 const cercles = document.querySelectorAll(".cercles")
 
@@ -26,5 +27,45 @@ window.addEventListener('mousemove', (e) => {
     })
 })
 
+
+// Navbar réactive au scroll //
+
+const nav = document.querySelector("nav");
+let oldScroll = window.scrollY;
+let newScroll = 0;
+
+
+window.addEventListener('scroll', (e) => {
+    newScroll = oldScroll;
+    oldScroll = window.scrollY;
+
+    if (oldScroll > newScroll == false) {
+        nav.style.top = 0;
+    }
+    else if (oldScroll > newScroll == true) {
+        nav.style.top = "-200px";
+
+    }
+
+
+
+
+
+
+
+
+    // this.oldScroll = this.scrollY;
+
+    // if (this.scrollY < this.oldScroll) {
+    //     nav.style.top = "-50px";
+    // }
+
+    // else if (this.oldScroll == true) {
+    //     nav.style.top = 0;
+
+    // }
+
+
+})
 
 
