@@ -158,6 +158,11 @@ header nav .nav__social li {
   color: #eeeeee;
 }
 
+header nav .nav__social li i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 @media screen and (max-width: 750px) {
   header nav .nav__site {
     display: none;
@@ -342,7 +347,7 @@ header .header__content p {
 .section__menu__container .background-bot {
   width: 100%;
   height: 110vh;
-  background: url("../img/bg-menu-01.jpg") bottom/150% no-repeat;
+  background: url("../img/bg-menu-01.jpg") bottom/contain no-repeat;
   background-color: #21201E;
 }
 

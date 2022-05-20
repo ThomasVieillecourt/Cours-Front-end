@@ -7,8 +7,6 @@ const sidebar = document.getElementById('side-bar');
 
 btnToggle.addEventListener('click', () => {
 
-
-
     on = btnToggle.classList.toggle('btn-clicked');
 
     if (on == true) {

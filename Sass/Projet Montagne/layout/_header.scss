@@ -7,6 +7,17 @@ header {
     .header__content {
         @include centerColumn;
         height: 100vh;
+        opacity: 0;
+        transform: translateY(40px);
+        animation: headerAnim 1.5s forwards;
+
+
+        @keyframes headerAnim {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     }
 
     h1 {
@@ -56,34 +67,83 @@ header {
         bottom: 0;
         @include centerRow;
         background-color: rgba($color: #ffffff, $alpha: 0.4);
-    }
 
-    li {
-        list-style: none;
-        color: $color1;
-    }
 
-    a {
-        text-decoration: none;
-
-        & li:hover {
-            color: $color2;
-            background-color: #ebebebc9;
+        li {
+            list-style: none;
+            color: $color1;
         }
-    }
 
-    .nav__left {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 16px;
-        text-transform: uppercase;
-        font-family: $font1;
-        letter-spacing: 1.4px;
-        font-size: 0.8rem;
+        a {
+            text-decoration: none;
 
-        & li {
-            padding: 24px 24px;
+            & li:hover {
+                color: $color2;
+                background-color: #ebebebc9;
+            }
+        }
+
+        .nav__left {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 16px;
+            text-transform: uppercase;
+            font-family: $font1;
+            letter-spacing: 1.4px;
+            font-size: 0.8rem;
+
+            & li {
+                padding: 24px 24px;
+            }
+        }
+
+        .nav__right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 16px;
+            text-transform: uppercase;
+            font-family: $font1;
+            letter-spacing: 1.4px;
+            font-size: 0.8rem;
+
+            & li {
+                padding: 24px 24px;
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+            .nav__right {
+                display: none;
+            }
+
+            .nav__left li {
+                text-align: center;
+            }
+
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .header__content-text {
+                padding: 56px 24px;
+                font-size: 0.8rem;
+            }
+
+            .nav__left li {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .nav__left {
+
+                & li {
+                    padding: 24px 4px;
+                    font-size: 0.6rem;
+                }
+            }
         }
     }
 
@@ -92,6 +152,10 @@ header {
         justify-content: space-around;
         align-items: center;
         gap: 16px;
+        text-transform: uppercase;
+        font-family: $font1;
+        letter-spacing: 1.4px;
+        font-size: 0.8rem;
 
         & li {
             padding: 24px 24px;

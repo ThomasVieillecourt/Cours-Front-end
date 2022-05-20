@@ -6,6 +6,9 @@
         font-size: 1rem;
         font-family: $font2;
         padding: 56px 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
 
         &::before {
             content: "";
@@ -13,7 +16,7 @@
             width: 300px;
             height: 1px;
             background: rgb(196, 196, 196);
-            left: 20%;
+            left: 10%;
             position: absolute;
             transform: translateY(8px);
 
@@ -29,7 +32,7 @@
 
             @media screen and (max-width: 800px) {
                 width: 200px;
-                left: 10%;
+                left: 5%;
             }
 
             @media screen and (max-width: 600px) {
@@ -39,7 +42,7 @@
 
             @media screen and (max-width: 400px) {
                 width: 60px;
-                left: 60px;
+                left: 30px;
             }
         }
 
@@ -49,7 +52,7 @@
             width: 300px;
             height: 1px;
             background: rgb(196, 196, 196);
-            right: 20%;
+            right: 10%;
             position: absolute;
             transform: translateY(-12px);
 
@@ -65,7 +68,7 @@
 
             @media screen and (max-width: 800px) {
                 width: 200px;
-                right: 10%;
+                right: 5%;
             }
 
             @media screen and (max-width: 600px) {
@@ -75,7 +78,7 @@
 
             @media screen and (max-width: 400px) {
                 width: 60px;
-                right: 60px;
+                right: 30px;
             }
 
         }

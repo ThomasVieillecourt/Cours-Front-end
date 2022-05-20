@@ -79,6 +79,10 @@ header {
 
             li {
                 color: $color1;
+
+                i:hover {
+                    transform: scale(1.3);
+                }
             }
         }
 

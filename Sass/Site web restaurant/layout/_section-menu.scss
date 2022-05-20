@@ -6,12 +6,13 @@
 
         width: 100%;
         height: 110vh;
-        background: url("../img/bg-menu-01.jpg") bottom/150% no-repeat;
+        background: url("../img/bg-menu-01.jpg") bottom/contain no-repeat;
         background-color: $color2;
 
 
         @media screen and (max-width: 900px) {
             height: 100%;
+
         }
 
     }

@@ -15,6 +15,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flux {
   max-width: 1200px;
   width: 100%;
@@ -107,6 +111,30 @@ body {
   width: 100%;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+}
+
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
 header {
   height: 100vh;
   width: 100%;
@@ -128,6 +156,27 @@ header .header__content {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-animation: headerAnim 1.5s forwards;
+          animation: headerAnim 1.5s forwards;
+}
+
+@-webkit-keyframes headerAnim {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerAnim {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 header h1 {
@@ -189,21 +238,21 @@ header nav {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-header li {
+header nav li {
   list-style: none;
   color: white;
 }
 
-header a {
+header nav a {
   text-decoration: none;
 }
 
-header a li:hover {
+header nav a li:hover {
   color: black;
   background-color: #ebebebc9;
 }
 
-header .nav__left {
+header nav .nav__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,8 +268,54 @@ header .nav__left {
   font-size: 0.8rem;
 }
 
-header .nav__left li {
+header nav .nav__left li {
   padding: 24px 24px;
+}
+
+header nav .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+  font-family: "InterBold";
+  letter-spacing: 1.4px;
+  font-size: 0.8rem;
+}
+
+header nav .nav__right li {
+  padding: 24px 24px;
+}
+
+@media screen and (max-width: 710px) {
+  header nav .nav__right {
+    display: none;
+  }
+  header nav .nav__left li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav .header__content-text {
+    padding: 56px 24px;
+    font-size: 0.8rem;
+  }
+  header nav .nav__left li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header nav .nav__left li {
+    padding: 24px 4px;
+    font-size: 0.6rem;
+  }
 }
 
 header .nav__right {
@@ -233,6 +328,10 @@ header .nav__right {
       -ms-flex-align: center;
           align-items: center;
   gap: 16px;
+  text-transform: uppercase;
+  font-family: "InterBold";
+  letter-spacing: 1.4px;
+  font-size: 0.8rem;
 }
 
 header .nav__right li {
@@ -286,6 +385,9 @@ header .nav__right li {
   font-size: 1rem;
   font-family: "MerriweatherLight";
   padding: 56px 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .jump__container .jump__container-head::before {
@@ -294,7 +396,7 @@ header .nav__right li {
   width: 300px;
   height: 1px;
   background: #c4c4c4;
-  left: 20%;
+  left: 10%;
   position: absolute;
   -webkit-transform: translateY(8px);
           transform: translateY(8px);
@@ -317,7 +419,7 @@ header .nav__right li {
 @media screen and (max-width: 800px) {
   .jump__container .jump__container-head::before {
     width: 200px;
-    left: 10%;
+    left: 5%;
   }
 }
 
@@ -331,7 +433,7 @@ header .nav__right li {
 @media screen and (max-width: 400px) {
   .jump__container .jump__container-head::before {
     width: 60px;
-    left: 60px;
+    left: 30px;
   }
 }
 
@@ -341,7 +443,7 @@ header .nav__right li {
   width: 300px;
   height: 1px;
   background: #c4c4c4;
-  right: 20%;
+  right: 10%;
   position: absolute;
   -webkit-transform: translateY(-12px);
           transform: translateY(-12px);
@@ -364,7 +466,7 @@ header .nav__right li {
 @media screen and (max-width: 800px) {
   .jump__container .jump__container-head::after {
     width: 200px;
-    right: 10%;
+    right: 5%;
   }
 }
 
@@ -378,7 +480,7 @@ header .nav__right li {
 @media screen and (max-width: 400px) {
   .jump__container .jump__container-head::after {
     width: 60px;
-    right: 60px;
+    right: 30px;
   }
 }
 
@@ -601,6 +703,7 @@ header .nav__right li {
   width: 100%;
   height: 8rem;
   border: 1px solid #ececec;
+  resize: none;
 }
 
 .footer__container .form__container .btn__footer {
