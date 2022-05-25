@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+
+}
+
+#todoContainer {
+    height: auto;
+    background-color: aliceblue;
+    width: 40%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+
+
+input {
+    outline: none;
+    height: 28px;
+    width: 240px;
+    border-radius: 6px;
+    border: none;
+    padding: 4px 8px;
+    font-family: Poppins, sans-serif;
+}
+
+#listContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#listContainer li {
+    margin: 0 30px;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.check::marker {
+    content: "✔️";
+    padding: 0 4px;
+}
