@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 1
+    },
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 2
+    },
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 3
+    },
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 4
+    },
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 5
+    },
+    {
+      "pseudo": "Fantasio",
+      "message": "Joue aux jeux-vidéos",
+      "id": 6
+    }
+  ]
+}
