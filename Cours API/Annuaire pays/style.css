@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  padding: 24px 0;
+}
+
+
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+input {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
+}
+
+.countries-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.card {
+  flex: 1 1 20%;
+  min-width: 280px;
+  height: 360px;
+  border-radius: 12px;
+  background-color: rgb(39, 39, 39);
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img {
+  width: 200px;
+  max-height: 180px;
+}
+
+.card h2 {
+  padding: 18px 0;
+}
+
+.card h4 {
+  padding: 12px 0;
+}
+
+.card p {
+  padding: 12px 0;
+}
