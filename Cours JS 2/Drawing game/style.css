@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+}
+
+.intro {
+    margin: 48px 0;
+}
+
+.hidden {
+    color: transparent;
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+}
+
+canvas {
+    border: 1px solid black;
+    cursor: crosshair;
+    display: block;
+    margin: 24px auto;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.tools {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    width: 40%;
+    margin: 0 auto;
+    background-color: burlywood;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid brown;
+}
+
+.guess {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 24px auto;
+}
+
+.Btn {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+
+    border: 2px solid black;
+
+}
+
+#black {
+    background-color: black;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#blue {
+    background-color: blue;
+
+}
+
+#yellow {
+    background-color: yellow;
+
+}
+
+#red {
+    background-color: red;
+
+}
+
+#pink {
+    background-color: pink;
+
+}
+
+#white {
+    background-color: white;
+
+}
+
+.answer-container {
+    margin: 24px 0;
+}
+
+.fa-solid {
+    pointer-events: none;
+}
+
+.gameStart {
+    font-size: 15px;
+    font-family: Arial;
+    width: 140px;
+    height: 50px;
+    border-width: 1px;
+    color: #fff;
+    border-color: #d02718;
+    font-weight: bold;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    text-shadow: 0px 1px 0px #810e05;
+    background: linear-gradient(#c62d1f, #f24437);
+    cursor: pointer;
+}
+
+.gameStart:hover {
+    background: linear-gradient(#f24437, #c62d1f);
+}
+
+.answer-container h3 {
+    margin: 24px 0;
+}
+
+.play {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play button {
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 3rem;
+    background: rgb(241, 0, 0);
+    background: linear-gradient(274deg, rgba(241, 0, 0, 0.938813025210084) 0%, rgba(255, 81, 18, 1) 50%, rgba(233, 29, 150, 1) 100%);
+    color: white;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+.container {
+    display: none;
+    transition: 0.4s linear;
+}
+
+#guessWord {
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#answer {
+    width: 220px;
+    height: 24px;
+    border-radius: 6px;
+    outline: none;
+    border: #ff9d00;
+    padding: 4px;
+}
+
+.table {
+    position: absolute;
+    right: 12%;
+    width: 240px;
+    height: 600px;
+    background-color: burlywood;
+    top: 20%;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.table h3 {
+    font-size: 1.8rem;
+    margin: 8px 0;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.table li {
+    text-align: left;
+    padding: 2px 12px;
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'Indie Flower', cursive;
+
+}

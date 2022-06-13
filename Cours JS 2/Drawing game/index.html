@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="intro">
+    <h1>Toma Draw</h1>
+
+    <p>Essaye de faire deviner le mot affiché à tes amis via l'espace de dessin ci-dessous</p>
+  </div>
+
+  <p>Mot à faire deviner : </p>
+
+
+
+  <div class="play"><button type="button" id="game">JOUER</button></div>
+
+
+
+  <div class="container">
+
+    <div class="guess">
+      <p id="guessWord"></p>
+      <div>
+        <button type="button" class="Btn" id="guessBtn"><i class="fa-solid fa-rotate-left"></i></button>
+        <button type="button" class="Btn" id="hideBtn"><i class="fa-solid fa-eye"></i></button>
+      </div>
+    </div>
+
+    <canvas id="art" width="600" height="400"></canvas>
+
+
+    <div class="tools">
+      <div class="colors">
+        <input type="button" class="Btn colors" id="black">
+        <input type="button" class="Btn colors" id="grey">
+        <input type="button" class="Btn colors" id="blue">
+        <input type="button" class="Btn colors" id="yellow">
+        <input type="button" class="Btn colors" id="red">
+        <input type="button" class="Btn colors" id="pink">
+        <input type="button" class="Btn colors" id="white">
+      </div>
+
+      <div class="strokeSize">
+        <button type="button" class="Btn size" id="tiny" value="3"><i class="fa-solid fa-pencil"></i></button>
+        <button type="button" class="Btn size" id="medium" value="12"><i class="fa-solid fa-paintbrush"></i></button>
+        <button type="button" class="Btn size" id="larger" value="36"><i class="fa-solid fa-paint-roller"></i></button>
+      </div>
+
+      <button type="reset" id="reset" class="Btn"><i class="fa-solid fa-trash-can"></i></button>
+
+    </div>
+
+    <div class="answer-container">
+      <input type="text" name="answer" id="answer" placeholder="Votre réponse">
+      <span></span>
+    </div>
+
+    <div class="table">
+      <h3>Mots dévinés : </h3>
+      <ul></ul>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
