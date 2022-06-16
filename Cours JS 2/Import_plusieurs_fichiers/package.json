@@ -1,0 +1,16 @@
+{
+  "name": "import_plusieurs_fichiers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
