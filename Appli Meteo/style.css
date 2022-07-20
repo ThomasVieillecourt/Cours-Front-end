@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   font-family: "Manrope", sans-serif;
-  background-color: #020207;
 }
 
 h1 {
@@ -28,9 +34,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   border-radius: 25px;
-  padding: 36px;
   width: 40vw;
-  height: 30vh;
+  height: auto;
   background: rgba(6, 6, 22, 0.81);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -38,24 +43,30 @@ h1 {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(2, 2, 7, 0.3);
   color: white;
-  -webkit-box-shadow: 0px 0px 18px 3px #011264;
-  box-shadow: 0px 0px 18px 3px #011264;
+  -webkit-box-shadow: 0px 0px 18px 3px rgba(2, 2, 7, 0.3);
+  box-shadow: 0px 0px 18px 3px rgba(2, 2, 7, 0.3);
 }
 
 #city {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  margin: 16px 0 4px 0;
+  max-width: 90%;
 }
-h2 {
+
+#temp {
   font-size: 4rem;
   font-weight: 800;
-  margin: 26px 0;
+  margin: 0 0 16px 0;
 }
 
 .container-meteo {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .card_meteo img {
@@ -65,12 +76,33 @@ h2 {
 
 #search {
   font-family: "Manrope", sans-serif;
-  width: 32vw;
-
-  border-radius: 12px;
+  width: 280px;
   color: white;
-  background-color: #102227;
   padding: 8px 12px;
   border: none;
   outline: none;
+  background: rgba(6, 6, 22, 0.81);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(2, 2, 7, 0.3);
+  color: white;
+  -webkit-box-shadow: 0px 0px 18px 3px rgba(2, 2, 7, 0.3);
+  box-shadow: 0px 0px 18px 3px rgba(2, 2, 7, 0.3);
+}
+
+#iconWeather {
+  width: 60%;
+}
+
+.paramWeather {
+  display: flex;
+  width: 90%;
+  border-top: 1px solid white;
+  padding: 16px 0;
+}
+
+.paramWeather div {
+  width: 100%;
 }

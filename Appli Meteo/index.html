@@ -8,23 +8,26 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="container">
-      <h1>WEATHER APP</h1>
       <input type="text" name="search" id="search" value="Paris" />
 
       <div class="card_meteo">
         <div class="container-meteo">
-          <div>
-            <p id="city">Ville</p>
-            <p id="descriptionWeather">Nuageux</p>
-            <h2 id="temp">Temperature</h2>
-            <p id="humidity">Humidité :</p>
-
-            <p id="windSpeed">vitesse du vent</p>
-          </div>
+          <h2 id="city">Ville</h2>
+          <p id="descriptionWeather">Nuageux</p>
           <div>
             <img src="" alt="icon" id="iconWeather" />
+          </div>
+          <h2 id="temp">Temperature</h2>
+
+          <div class="paramWeather">
+            <div>
+              <p id="humidity">Humidité :</p>
+            </div>
+            <div>
+              <p id="windSpeed">vitesse du vent</p>
+            </div>
           </div>
         </div>
       </div>

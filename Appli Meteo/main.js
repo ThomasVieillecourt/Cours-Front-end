@@ -20,11 +20,13 @@ function fetchDisplay() {
 
       let icon = dataWeather.weather[0].icon;
       cityWeather.textContent = dataWeather.name;
-      temp.textContent = Math.round(dataWeather.main.temp) + " °C";
+      temp.textContent = Math.round(dataWeather.main.temp) + " °";
       iconWeather.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-      humidity.textContent = "Humidité : " + dataWeather.main.humidity + " %";
-      windSpeed.textContent =
-        "Vitesse du vent : " + dataWeather.wind.speed + " km/h";
+      humidity.innerHTML =
+        `<p>Humidité : <br>` + dataWeather.main.humidity + ` %</p>`;
+      // "Humidité : " + dataWeather.main.humidity + " %";
+      windSpeed.innerHTML =
+        `<p>Vitesse du vent : <br>` + dataWeather.wind.speed + ` km/h</p>`;
 
       let arrayWeather = [
         "Nuageux",
@@ -37,18 +39,25 @@ function fetchDisplay() {
 
       if (dataWeather.weather[0].main == "Clouds") {
         descriptionWeather.textContent = arrayWeather[0];
+        body.style.background = "url('img/clouds.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "Clear") {
         descriptionWeather.textContent = arrayWeather[1];
+        body.style.background = "url('img/sun.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "Light rain") {
         descriptionWeather.textContent = arrayWeather[2];
+        body.style.background = "url('img/rain.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "Rain") {
         descriptionWeather.textContent = arrayWeather[3];
+        body.style.background = "url('img/rain.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "thunderstorm") {
         descriptionWeather.textContent = arrayWeather[4];
+        body.style.background = "url('img/thunder.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "shower rain") {
         descriptionWeather.textContent = arrayWeather[3];
+        body.style.background = "url('img/rain.jpg') center/cover";
       } else if (dataWeather.weather[0].main == "snow") {
         descriptionWeather.textContent = arrayWeather[5];
+        body.style.background = "url('img/snow.jpg') center/cover";
       }
     });
 }
